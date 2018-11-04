@@ -23,6 +23,7 @@ class AddressChecker extends React.Component {
 
     if (code === 404 || code === 400) {
       this.setState({ error: message });
+      this.setState({ balances: [] });
     } else {
       this.setState({ error: null });
     }
