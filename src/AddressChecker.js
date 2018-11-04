@@ -23,18 +23,20 @@ class AddressChecker extends React.Component {
 
   render() {
     return (
-      <div>
-        <h1>Enter your public xlm address</h1>
-        <p>
-          Your public address is a safe address you can share with others.
-          Example is GCFXHS4GXL6BVUCXBWXGTITROWLVYXQKQLF4YH5O5JT3YZXCYPAFBJZB.
-        </p>
-        <AddressTextField onTextChange={this.handleAddressTextFieldChange} />
-        <CheckBalanceButton
-          onButtonClick={this.handleBalanceChange}
-          address={this.state.address}
-        />
-        <ResultsTable balances={this.state.balances} />
+      <div className="columns is-centered">
+        <div className="column is-half address-checker">
+          <h1 className="title">Enter your public xlm address</h1>
+          <p className="subtitle">
+            Your public address starts with <strong>G</strong>. Don't paste here
+            your secret key that starts with <strong>S</strong>.
+          </p>
+          <AddressTextField onTextChange={this.handleAddressTextFieldChange} />
+          <CheckBalanceButton
+            onButtonClick={this.handleBalanceChange}
+            address={this.state.address}
+          />
+          <ResultsTable balances={this.state.balances} />
+        </div>
       </div>
     );
   }

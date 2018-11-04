@@ -14,9 +14,11 @@ WebFont.load({
 class App extends React.Component {
   render() {
     return (
-      <div id="app">
-        <AddressChecker />
-        <Footer />
+      <div className="section">
+        <div className="container">
+          <AddressChecker />
+          <Footer />
+        </div>
       </div>
     );
   }

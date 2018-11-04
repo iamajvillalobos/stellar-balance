@@ -12,7 +12,11 @@ function AddressCheckerButton({ address, onButtonClick }) {
     });
   }
 
-  return <button onClick={fetchAddressBalances}>Check Balance</button>;
+  return (
+    <div class="check-balance-button">
+      <button onClick={fetchAddressBalances}>Check Balance</button>
+    </div>
+  );
 }
 
 export default AddressCheckerButton;

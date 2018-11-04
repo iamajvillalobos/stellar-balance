@@ -1,12 +1,22 @@
 import React from "react";
 
 function Footer() {
+  const reactUrl = "https://reactjs.org/";
+  const siteUrl = "http://iamajvillalobos.micro.blog/about/";
+  const repoUrl = "https://github.com/iamajvillalobos/stellar-balance";
+
   return (
     <footer>
-      <p>
-        This project is not affiliated with Stellar. It is an open-source
-        project, aims to easily check your balance on the Stellar network.
-      </p>
+      <div className="content">
+        <p>
+          This project is not affiliated with Stellar. It is an &nbsp;
+          <a href={repoUrl}>open-source project</a> to showcase my learnings
+          with <a href={reactUrl}>React</a>. Created by &nbsp;
+          <a target="_blank" href={siteUrl}>
+            AJ Villalobos
+          </a>
+        </p>
+      </div>
     </footer>
   );
 }

@@ -5,7 +5,15 @@ function AddressTextField({ onTextChange }) {
     onTextChange(event.target.value);
   }
 
-  return <input type="text" onChange={handleAddressTextFieldChange} />;
+  return (
+    <div className="address-text-field">
+      <input
+        type="text"
+        onChange={handleAddressTextFieldChange}
+        placeholder="GCFXHS4GXL6BVUCXBWXGTITROWLVYXQKQLF4YH5O5JT3YZXCYPAFBJZB"
+      />
+    </div>
+  );
 }
 
 export default AddressTextField;
