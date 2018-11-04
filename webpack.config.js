@@ -15,11 +15,11 @@ module.exports = {
         use: ["babel-loader"]
       },
       {
-        test: /\.css$/,
+        test: /\.scss$/,
         include: path.resolve(__dirname, "src"),
         use: ExtractTextPlugin.extract({
           fallback: "style-loader",
-          use: ["css-loader"]
+          use: ["css-loader", "sass-loader"]
         })
       }
     ]
