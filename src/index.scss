@@ -12,12 +12,20 @@ $white: #fff;
   color: $dark-blue;
 }
 
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 .address-checker {
+  flex: 1;
+
   .title {
     font-family: "Roboto Condensed", sans-serif;
     text-transform: uppercase;
     font-size: 2.5rem;
-    line-height: 2rem;
+    line-height: 2.5rem;
   }
 
   .subtitle {
@@ -87,18 +95,12 @@ $white: #fff;
 }
 
 footer {
-  position: fixed;
-  bottom: 1rem;
-  width: 100%;
   background-color: $gray;
-  padding: 0.5rem 0;
-
-  .content {
-    text-align: center;
-    font-family: "Roboto", sans-serif;
-    line-height: 1.25rem;
-    font-size: 0.875rem;
-  }
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.25rem;
+  font-size: 0.875rem;
+  padding: 1rem 0.5rem;
 }
 
 .notification {

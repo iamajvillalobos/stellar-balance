@@ -7,7 +7,7 @@ function Footer() {
 
   return (
     <footer>
-      <div className="content">
+      <div className="container">
         <p>
           This project is not affiliated with Stellar. It is an &nbsp;
           <a href={repoUrl}>open-source project</a> to showcase my learnings
