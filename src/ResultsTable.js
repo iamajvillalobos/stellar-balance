@@ -1,21 +1,19 @@
 import React from "react";
+import ResultsTableRow from "./ResultsTableRow";
 
-function ResultsTable() {
+function ResultsTable({ balances }) {
   return (
     <table>
       <thead>
         <tr>
           <td>Token</td>
           <td>Total</td>
-          <td>Value(USD)</td>
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td>BX8</td>
-          <td>100.0000000</td>
-          <td>22</td>
-        </tr>
+        {balances.map(balance => {
+          return <ResultsTableRow data={balance} />;
+        })}
       </tbody>
     </table>
   );
