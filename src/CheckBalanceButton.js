@@ -4,7 +4,7 @@ import axios from "axios";
 const STELLAR_API_URL = "https://horizon.stellar.org/accounts";
 
 function AddressCheckerButton({ address, onButtonClick, onError }) {
-  function fetchAddressBalances(event) {
+  function fetchAddressBalances() {
     const url = `${STELLAR_API_URL}/${address}`;
     axios
       .get(url)

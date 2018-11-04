@@ -12,7 +12,7 @@ function Footer() {
           This project is not affiliated with Stellar. It is an &nbsp;
           <a href={repoUrl}>open-source project</a> to showcase my learnings
           with <a href={reactUrl}>React</a>. Created by &nbsp;
-          <a target="_blank" href={siteUrl}>
+          <a target="_blank" rel="noopener noreferrer" href={siteUrl}>
             AJ Villalobos
           </a>
         </p>

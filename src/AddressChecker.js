@@ -49,7 +49,7 @@ class AddressChecker extends React.Component {
 
                 <h1 className="title">Enter your public xlm address</h1>
                 <p className="subtitle">
-                  Your public address starts with <strong>G</strong>. Don't
+                  Your public address starts with <strong>G</strong>. Don&#x27;t
                   paste here your secret key that starts with <strong>S</strong>
                   .
                 </p>
