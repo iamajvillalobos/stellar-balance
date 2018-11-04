@@ -1,0 +1,113 @@
+@import "~minireset.css/minireset.css";
+@import "bulma/sass/utilities/_all.sass";
+@import "bulma/sass/grid/columns.sass";
+@import "bulma/sass/layout/section.sass";
+
+$gray: #f7f5f4;
+$dark-blue: #424359;
+$red: #f40e0e;
+$white: #fff;
+
+* {
+  color: $dark-blue;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.address-checker {
+  flex: 1;
+
+  .title {
+    font-family: "Roboto Condensed", sans-serif;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+  }
+
+  .subtitle {
+    font-family: "Roboto", sans-serif;
+    line-height: 1.5rem;
+    padding: 1rem 0;
+  }
+}
+
+.address-text-field {
+  input {
+    width: 100%;
+    font-family: "Roboto Mono", monospace;
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+}
+
+.check-balance-button {
+  padding-top: 0.5rem;
+
+  button {
+    background-color: #424359;
+    color: #fff;
+    border: medium none;
+    padding: 0.75rem 1.5rem;
+    font-size: 0.75rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2.5px;
+  }
+}
+
+.results-table {
+  padding-top: 1rem;
+
+  .table-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: $gray;
+    padding: 0 1rem;
+  }
+
+  .table-header .header-item {
+    font-family: "Roboto Condensed", sans-serif;
+    line-height: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+  }
+
+  .table-contents {
+    padding-top: 0.25rem;
+  }
+
+  .table-contents .content-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 1rem;
+  }
+
+  .table-contents .content-row .row-item {
+    font-family: "Roboto Mono", monospace;
+    font-size: 14px;
+    line-height: 1.75rem;
+  }
+}
+
+footer {
+  background-color: $gray;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.25rem;
+  font-size: 0.875rem;
+  padding: 1rem 0.5rem;
+}
+
+.notification {
+  font-family: "Roboto", sans-serif;
+  padding: 1rem;
+  background-color: $gray;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
