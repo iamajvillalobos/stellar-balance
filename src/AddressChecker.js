@@ -8,23 +8,17 @@ class AddressChecker extends React.Component {
   constructor() {
     super();
     this.state = { balances: [], address: "", error: null };
-    this.handleAddressTextFieldChange = this.handleAddressTextFieldChange.bind(
-      this
-    );
-    this.handleBalanceChange = this.handleBalanceChange.bind(this);
-    this.handleError = this.handleError.bind(this);
-    this.handleNotificationClose = this.handleNotificationClose.bind(this);
   }
 
-  handleBalanceChange(balances) {
+  handleBalanceChange = balances => {
     this.setState({ balances: balances });
-  }
+  };
 
-  handleAddressTextFieldChange(address) {
+  handleAddressTextFieldChange = address => {
     this.setState({ address: address });
-  }
+  };
 
-  handleError(code) {
+  handleError = code => {
     const message = "Address is invalid";
 
     if (code === 404 || code === 400) {
@@ -32,11 +26,11 @@ class AddressChecker extends React.Component {
     } else {
       this.setState({ error: null });
     }
-  }
+  };
 
-  handleNotificationClose() {
+  handleNotificationClose = () => {
     this.setState({ error: null });
-  }
+  };
 
   render() {
     return (
