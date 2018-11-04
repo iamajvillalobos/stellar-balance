@@ -5,6 +5,8 @@
 
 $gray: #f7f5f4;
 $dark-blue: #424359;
+$red: #f40e0e;
+$white: #fff;
 
 * {
   color: $dark-blue;
@@ -97,4 +99,13 @@ footer {
     line-height: 1.25rem;
     font-size: 0.875rem;
   }
+}
+
+.notification {
+  font-family: "Roboto", sans-serif;
+  padding: 1rem;
+  background-color: $gray;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
 }
