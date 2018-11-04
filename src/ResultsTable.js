@@ -3,14 +3,14 @@ import ResultsTableRow from "./ResultsTableRow";
 
 function ResultsTable({ balances }) {
   return (
-    <div class="results-table">
-      <div class="table-header">
-        <span class="header-item">Token</span>
-        <span class="header-item">Total</span>
+    <div className="results-table">
+      <div className="table-header">
+        <span className="header-item">Token</span>
+        <span className="header-item">Total</span>
       </div>
-      <div class="table-contents">
-        {balances.map(balance => {
-          return <ResultsTableRow data={balance} />;
+      <div className="table-contents">
+        {balances.map((balance, index) => {
+          return <ResultsTableRow data={balance} key={index} />;
         })}
       </div>
     </div>

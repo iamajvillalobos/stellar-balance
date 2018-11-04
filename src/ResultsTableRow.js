@@ -5,9 +5,9 @@ function ResultsTableRow({ data }) {
   const balance = data.balance;
 
   return (
-    <div class="content-row">
-      <span class="row-item">{tokenName}</span>
-      <span class="row-item">{balance}</span>
+    <div className="content-row">
+      <span className="row-item">{tokenName}</span>
+      <span className="row-item">{balance}</span>
     </div>
   );
 }
