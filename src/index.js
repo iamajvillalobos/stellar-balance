@@ -1,15 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
+import AddressChecker from "./AddressChecker";
 
 class App extends React.Component {
   render() {
-    return (
-      <div>
-        <h1>Hello from React!</h1>
-        <button>Hello too!</button>
-      </div>
-    );
+    return <AddressChecker />;
   }
 }
 
