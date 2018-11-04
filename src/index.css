@@ -1,3 +1,5 @@
+@import "~minireset.css";
+
 div {
   color: green;
 }
