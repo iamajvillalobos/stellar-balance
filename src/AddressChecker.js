@@ -6,10 +6,7 @@ import Notification from "./Notification";
 import LoadingSpinner from "./LoadingSpinner";
 
 class AddressChecker extends React.Component {
-  constructor() {
-    super();
-    this.state = { balances: [], address: "", error: null, fetching: false };
-  }
+  state = { balances: [], address: "", error: null, fetching: false };
 
   handleBalanceChange = balances => {
     this.setState({ balances, error: null });
