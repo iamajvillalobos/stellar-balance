@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/stellar-balance/static/css/1.4852834f.chunk.css"
   },
   {
-    "revision": "7cde600fc9e953e410edba4325d9430d",
+    "revision": "fd6cacc6f9fefaff311e60c87ecd4540",
     "url": "/stellar-balance/index.html"
   }
 ];
