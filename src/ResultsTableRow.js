@@ -1,4 +1,5 @@
 import React from "react";
+import formatNumber from "accounting-js/lib/formatNumber.js";
 
 function ResultsTableRow({ data }) {
   const tokenName = data.asset_code ? data.asset_code : "XLM";
@@ -7,7 +8,7 @@ function ResultsTableRow({ data }) {
   return (
     <div className="content-row">
       <span className="row-item">{tokenName}</span>
-      <span className="row-item">{balance}</span>
+      <span className="row-item">{formatNumber(balance)}</span>
     </div>
   );
 }

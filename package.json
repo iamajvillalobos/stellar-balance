@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://iamajvillalobos.github.io/stellar-balance/",
   "dependencies": {
+    "accounting-js": "^1.1.1",
     "axios": "^0.18.0",
     "bulma": "^0.7.2",
     "gh-pages": "^2.0.1",
