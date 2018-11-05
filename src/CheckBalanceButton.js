@@ -9,12 +9,10 @@ function AddressCheckerButton({ address, onButtonClick, onError }) {
     axios
       .get(url)
       .then(response => {
-        const balances = response.data.balances;
-        onButtonClick(balances);
-        onError(response.status);
+        onButtonClick(response.data.balances);
       })
       .catch(error => {
-        onError(error.response.status);
+        onError(error.response.statusText);
       });
   }
 
