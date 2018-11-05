@@ -1,19 +1,14 @@
 import React from "react";
-import axios from "axios";
-
-const STELLAR_API_URL = "https://horizon.stellar.org/accounts";
+import fetchXLMAddressBalances from "./fetchXLMAddressBalances";
 
 function AddressCheckerButton({ address, onButtonClick, onError }) {
-  function fetchAddressBalances() {
-    const url = `${STELLAR_API_URL}/${address}`;
-    axios
-      .get(url)
-      .then(response => {
-        onButtonClick(response.data.balances);
-      })
-      .catch(error => {
-        onError(error.response.statusText);
-      });
+  async function fetchAddressBalances() {
+    let result = await fetchXLMAddressBalances(address);
+    if (Array.isArray(result)) {
+      onButtonClick(result);
+    } else {
+      onError(result);
+    }
   }
 
   return (
