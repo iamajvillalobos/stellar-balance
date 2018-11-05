@@ -3,16 +3,16 @@ import AddressTextField from "./AddressTextField";
 import CheckBalanceButton from "./CheckBalanceButton";
 import ResultsTable from "./ResultsTable";
 import Notification from "./Notification";
+import LoadingSpinner from "./LoadingSpinner";
 
 class AddressChecker extends React.Component {
   constructor() {
     super();
-    this.state = { balances: [], address: "", error: null };
+    this.state = { balances: [], address: "", error: null, fetching: false };
   }
 
   handleBalanceChange = balances => {
-    this.setState({ balances });
-    this.setState({ error: null });
+    this.setState({ balances, error: null });
   };
 
   handleAddressTextFieldChange = address => {
@@ -20,8 +20,7 @@ class AddressChecker extends React.Component {
   };
 
   handleError = error => {
-    this.setState({ balances: [] });
-    this.setState({ error });
+    this.setState({ balances: [], error });
   };
 
   handleNotificationClose = () => {
