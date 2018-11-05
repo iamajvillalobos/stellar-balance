@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/stellar-balance/precache-manifest.6a0fb264d6447a6cef280303e82c2025.js"
+  "/stellar-balance/precache-manifest.b1a1def83acaac3b785340e95b0e9704.js"
 );
 
 workbox.clientsClaim();
