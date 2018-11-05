@@ -1,7 +1,6 @@
 import React from "react";
 
 function Footer() {
-  const reactUrl = "https://reactjs.org/";
   const siteUrl = "http://iamajvillalobos.micro.blog/about/";
   const repoUrl = "https://github.com/iamajvillalobos/stellar-balance";
 

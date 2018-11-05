@@ -2,6 +2,7 @@
 @import "bulma/sass/utilities/_all.sass";
 @import "bulma/sass/grid/columns.sass";
 @import "bulma/sass/layout/section.sass";
+@import "bulma/sass/elements/button.sass";
 
 $gray: #f7f5f4;
 $dark-blue: #424359;
@@ -110,4 +111,13 @@ footer {
   margin-bottom: 1rem;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+
+  > .is-link {
+    background: none;
+    border: none;
+    font-size: 1rem;
+    text-decoration: underline;
+    cursor: pointer;
+  }
 }

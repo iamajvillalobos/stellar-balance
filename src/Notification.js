@@ -9,9 +9,9 @@ function Notification({ message, onClick }) {
   return (
     <div className="notification">
       <span className="message">{message}</span>
-      <a href="" className="close-button" onClick={handleCloseAction}>
+      <button className="close-button is-link" onClick={handleCloseAction}>
         Close
-      </a>
+      </button>
     </div>
   );
 }
