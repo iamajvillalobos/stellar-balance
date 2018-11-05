@@ -9,12 +9,12 @@ function Footer() {
     <footer>
       <div className="container">
         <p>
-          This project is not affiliated with Stellar. It is an &nbsp;
-          <a href={repoUrl}>open-source project</a> to showcase my learnings
-          with <a href={reactUrl}>React</a>. Created by &nbsp;
+          This project is not affiliated with Stellar. It is an{" "}
+          <a href={repoUrl}>open-source project</a> created by{" "}
           <a target="_blank" rel="noopener noreferrer" href={siteUrl}>
             AJ Villalobos
           </a>
+          .
         </p>
       </div>
     </footer>
